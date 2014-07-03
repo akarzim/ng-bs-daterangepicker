@@ -1,17 +1,17 @@
 {
   "name": "ng-bs-daterangepicker",
   "description": "AngularJS directive for bootstrap-daterangepicker",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "filename": "./src/ng-bs-daterangepicker.js",
-  "homepage": "http://github.com/luisfarzati/ng-bs-daterangepicker",
+  "homepage": "http://github.com/akarzim/ng-bs-daterangepicker",
   "author": {
-    "name": "Luis Farzati",
-    "email": "lfarzati@gmail.com",
-    "url": "http://github.com/luisfarzati"
+    "name": "François VANTOMME",
+    "email": "akarzim@gmail.com",
+    "url": "http://github.com/akarzim"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/luisfarzati/ng-bs-daterangepicker.git"
+    "url": "git://github.com/akarzim/ng-bs-daterangepicker.git"
   },
   "keywords": [
     "angular",
@@ -24,7 +24,7 @@
     "calendar"
   ],
   "bugs": {
-    "url": "http://github.com/luisfarzati/ng-bs-daterangepicker/issues"
+    "url": "http://github.com/akarzim/ng-bs-daterangepicker/issues"
   },
   "dependencies": {
   },
