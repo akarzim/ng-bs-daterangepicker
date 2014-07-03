@@ -47,14 +47,14 @@ angular.module('ngBootstrap', []).directive('input', function ($compile, $parse)
 
 			$scope.$watch($attributes.ngModel, function (modelValue) {
 				if (!modelValue || (!modelValue.startDate)) {
-					ngModel.$setViewValue({ startDate: moment().startOf('day'), endDate: moment().startOf('day') });
-					return;
-				}
-				$element.data('daterangepicker').setStartDate(modelValue.startDate);
-				$element.data('daterangepicker').setEndDate(modelValue.endDate);
-				$element.data('daterangepicker').updateView();
-				$element.data('daterangepicker').updateCalendars();
-				$element.data('daterangepicker').updateInputText();
+                    $element.data('daterangepicker').setStartDate(moment());
+                    $element.data('daterangepicker').setEndDate(moment());
+                    $element.data('daterangepicker').element.val('');
+				} else {
+                    $element.data('daterangepicker').setStartDate(modelValue.startDate);
+                    $element.data('daterangepicker').setEndDate(modelValue.endDate);
+                    $element.data('daterangepicker').updateInputText();
+                }
 			});
 
 			$element.daterangepicker(options, function(start, end) {
@@ -62,7 +62,7 @@ angular.module('ngBootstrap', []).directive('input', function ($compile, $parse)
 					ngModel.$setViewValue({ startDate: start, endDate: end });
 					ngModel.$render();
 				});
-			});			
+			});
 		}
 	};
 });
