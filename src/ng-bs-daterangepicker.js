@@ -14,6 +14,7 @@ angular.module('ngBootstrap', []).directive('input', function ($compile, $parse)
 			if ($attributes.type !== 'daterange' || ngModel === null ) return;
 
 			var options = {};
+            options.parentEl = $attributes.parentEl || 'body';
 			options.format = $attributes.format || 'YYYY-MM-DD';
 			options.separator = $attributes.separator || ' - ';
 			options.minDate = $attributes.minDate && moment($attributes.minDate);
